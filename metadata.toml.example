@@ -1,0 +1,20 @@
+[basecaller_config]
+basecaller_version = '6.1.2' # ont-guppy-basecaller_version
+archive_name = 'SGH_N112_COVID' # using as input_path argument
+fast5_dir = 'fast5' # using with archive_name
+fastq_demux_dir = 'fastq_demux' # using as save_path argument
+basecaller_mode = 'dna_r9.4.1_450bps_sup.cfg'
+barcode_kits = 'SQK-RBK110-96'
+require_barcodes_both_ends = '' # set true if you need, otherwise leave it blank
+GPU_device = 'auto'
+fastq_name = 'SGH_N112' # fastq_name_barcode*.fastq
+
+[sequencing_protocol]
+protocol_name = 'artic' # artic/midnight
+protocol_version = '4'
+primer_scheme = 'nCoV-2019'
+primer_scheme_symlink = 'SARS-CoV-2'
+medaka_normalise = '200'
+medaka_threads = '16'
+medaka_model = 'r941_min_sup_g507'
+file_size = '' # focus on specific file
